@@ -11,6 +11,7 @@ export default function Lists(props) {
   };
   return (
     <li className="lstItem">
+      {/* If editing is ON then input field visible with two buttons save and exit ELSE simple list item will visible like task name, edit option and delete option */}
       {checkEditing ? (
         <>
         <input type="text"
