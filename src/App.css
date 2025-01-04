@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  background-image: url("./assets/images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+body{
+  
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+/* main container */
+.container{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 80px;
+  padding: 60px;
+  background-color: beige;
+  border: 5px dashed rgb(221, 221, 99);
+}
+
+/* for main heading i.e., TODO list*/
+.main-heading{
+  background-color: wheat;
+  color: darkblue;
+  padding: 10px;
+  border-radius: 20%;
+  font-family: "Rubik Vinyl", serif;
+  text-shadow:1px 1px 2px rgba(0, 0, 0, 0.5), 
+
+  2px 2px 4px rgba(0, 0, 0, 0.3), 
+
+  3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* for listing elements field */
+.list-container{
+  padding: 20px;
+}
+/* firstly-> input field */
+.input-field{
+  padding: 8px;
+  height: 50px;
+  background-color: white;
+  border: 4px outset blue;
+  color: black;
+}
+
+/* Add button */
+.addBtn,.Update,.Exit{
+  margin-left: 10px;
+  background-color: darkblue;
+  border: 3px inset black;
+  
+} 
+.Update,.Exit{
+padding: 5px;
+margin: 0;
+width: 100px;
+}
+/* List box */
+.todoList{
+  background-color: rgb(175, 235, 237);
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.listItemwise,.edit-field{
+  display: flex;
+  justify-content: space-around;
+  background-color: antiquewhite;
+  border: 2px inset white;
+  padding: 10px ;
+  color:rgb(57, 92, 93);
+  font-weight: bold;
+}
+.edit-field{
+  width: 100%;
+}
+span{
+  margin-right: 10px;
+}
+.edit{
+  color: darkgreen;
+}
+.trash{
+  color: red;
+}
+i{
+  cursor: pointer;
+}
+/* Each list item */
+.lstItem{
+  padding: 5px;
+  list-style: none;
+
+}
+
+.functionbtn{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
